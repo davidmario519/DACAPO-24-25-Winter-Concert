@@ -9,7 +9,7 @@ body {
     background-color: #78B37B;
     color: #FFF9C4;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .image1 {
@@ -51,28 +51,6 @@ body {
     right: 1vh;
 }
 
-
-/* .image2 {
-    position: relative;
-    left: -15vh;
-    width: 80%;
-    top: 5vh;
-}
-
-.image3 {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    top: 10%
-}
-
-.image4 {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    top: -35vh;
-} */
-
 .container {
     display: flex;
     flex-direction: column;
@@ -83,27 +61,6 @@ body {
     min-height: 100vh;
     padding: 2rem;
     background: repeating-linear-gradient( 90deg, transparent, transparent 15px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 30px);
-}
-
-.background-shape {
-    position: absolute;
-    background-color: #FF6B6B;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.background-shape.left {
-    width: 80vh;
-    height: 80vh;
-    top: -40vh;
-    left: -40vh;
-}
-
-.background-shape.right {
-    width: 100vh;
-    height: 100vh;
-    bottom: -50vh;
-    right: -50vh;
 }
 
 .content {
@@ -127,7 +84,8 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.subtitle {
+
+/* .subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
 }
@@ -141,9 +99,10 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-}
+} */
 
-.music-icon {
+
+/* .music-icon {
     font-size: 2rem;
 }
 
@@ -156,9 +115,10 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     letter-spacing: 0.1em;
-}
+} */
 
-.start-button,
+
+/* .start-button,
 .back-button {
     background-color: #FF6B6B;
     color: white;
@@ -200,7 +160,7 @@ h2 {
 
 .hidden {
     display: none;
-}
+} */
 
 @media (max-width: 768px) {
     h1,

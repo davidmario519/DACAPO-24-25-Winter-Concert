@@ -33,14 +33,14 @@ body {
     position: absolute;
     max-width: 90%;
     height: auto;
-    bottom: 10vh;
+    top: 80vh
 }
 
 .image4 {
     position: absolute;
     max-width: 90%;
     height: auto;
-    bottom: 20vh;
+    top: 60vh
 }
 
 .image5 {
@@ -49,6 +49,79 @@ body {
     height: auto;
     top: 20vh;
     right: 1vh;
+}
+
+.image6 {
+    position: relative;
+    width: 43%;
+    height: auto;
+    margin-top: 120vh;
+    right: -7vh;
+    top: -17vh;
+    right: -14vh;
+}
+
+.image7 {
+    position: absolute;
+    width: 12%;
+    top: 52vh;
+    right: 3vh;
+    transform: rotate(5deg);
+}
+
+.image8 {
+    position: absolute;
+    width: 40%;
+    top: 35vh;
+    right: 6vh;
+}
+
+.image9 {
+    position: absolute;
+    width: 5%;
+    top: 15vh;
+    left: 25vh;
+    transform: rotate(-15deg);
+}
+
+.image10 {
+    position: relative;
+    width: 70%;
+    left: -6vh;
+    height: auto;
+    top: -30vh;
+}
+
+.image11,
+.image12 {
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: -6vh;
+    top: -48vh;
+    margin-bottom: -10vh;
+}
+
+.image12 {
+    margin-bottom: -120vh;
+}
+
+.image13 {
+    position: relative;
+    width: 130%;
+    height: auto;
+    right: 4vh;
+    bottom: -29vh;
+    margin-bottom: -54.2vh;
+    overflow: hidden;
+}
+
+.image14 {
+    position: relative;
+    width: 68%;
+    bottom: -59vh;
+    /* left: -10vh; */
+    margin-bottom: -25.5vh;
 }
 
 .container {

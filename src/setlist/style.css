@@ -1,0 +1,67 @@
+/* setlist.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.setlist-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.setlist-table th,
+.setlist-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.setlist-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.setlist-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.details {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details.hidden {
+    display: none;
+}
+
+#songDetails {
+    font-size: 16px;
+    color: #333;
+}

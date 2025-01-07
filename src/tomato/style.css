@@ -4,22 +4,163 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+body {
     background-color: #78B37B;
-    color: #FFF9C4;
-    min-height: 100vh;
+    height: auto;
+    min-height: 100%;
     overflow-x: hidden;
 }
 
-.container {
+.background {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    width: 100%;
     position: relative;
     min-height: 100vh;
     padding: 2rem;
+    background-color: #78B37B;
     background: repeating-linear-gradient( 90deg, transparent, transparent 15px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 30px);
+    position: fixed;
+    /* 배경을 고정시킴 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* 배경이 다른 콘텐츠 아래에 배치되도록 설정 */
+}
+
+.t1 {
+    position: absolute;
+    width: 33%;
+    top: 8vh;
+    left: 4vh;
+}
+
+.t2 {
+    position: absolute;
+    width: 28%;
+    top: 1vh;
+    right: 8vh;
+}
+
+.t3 {
+    position: absolute;
+    width: 33%;
+    top: 18vh;
+    right: 1vh;
+}
+
+.t4 {
+    position: absolute;
+    width: 25%;
+    top: 24vh;
+    left: 15vh;
+}
+
+.t5 {
+    position: absolute;
+    width: 25%;
+    top: 30vh;
+    left: 1vh;
+}
+
+.t6 {
+    position: absolute;
+    width: 25%;
+    top: 40vh;
+    left: 15vh;
+}
+
+.t7 {
+    position: absolute;
+    width: 32%;
+    top: 34vh;
+    right: 3vh;
+}
+
+.t8 {
+    position: absolute;
+    width: 25%;
+    top: 48vh;
+    left: 3vh;
+}
+
+.t9 {
+    position: absolute;
+    width: 30%;
+    top: 47vh;
+    right: 5vh;
+}
+
+.t10 {
+    position: absolute;
+    width: 33%;
+    top: 64vh;
+    left: 1vh;
+}
+
+.t11 {
+    position: absolute;
+    width: 23%;
+    top: 66vh;
+    right: 16vh;
+}
+
+.t12 {
+    position: absolute;
+    width: 23%;
+    top: 73vh;
+    right: 3vh;
+}
+
+.t13 {
+    position: absolute;
+    width: 30%;
+    top: 79vh;
+    right: 16vh;
+}
+
+.t14 {
+    position: absolute;
+    width: 25%;
+    top: 87vh;
+    left: 3vh;
+}
+
+.t15 {
+    position: absolute;
+    width: 25%;
+    top: 92vh;
+    left: 18vh;
+}
+
+.t16 {
+    position: absolute;
+    width: 25%;
+    top: 89vh;
+    right: 2vh;
+}
+
+.t17 {
+    position: absolute;
+    width: 25%;
+    top: 100vh;
+    right: 5vh;
+}
+
+.t18 {
+    position: absolute;
+    width: 28%;
+    top: 105vh;
+    left: 6vh;
+    padding-bottom: 10vh;
 }

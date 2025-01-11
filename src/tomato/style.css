@@ -17,6 +17,18 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.image {
+    cursor: pointer;
+    object-fit: cover;
+}
+
 .background {
     display: flex;
     flex-direction: column;
@@ -29,138 +41,174 @@ body {
     background-color: #78B37B;
     background: repeating-linear-gradient( 90deg, transparent, transparent 15px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 30px);
     position: fixed;
-    /* 배경을 고정시킴 */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* 배경이 다른 콘텐츠 아래에 배치되도록 설정 */
 }
 
-.t1 {
+#t1 {
     position: absolute;
     width: 33%;
     top: 8vh;
     left: 4vh;
 }
 
-.t2 {
+#t2 {
     position: absolute;
     width: 28%;
     top: 1vh;
     right: 8vh;
 }
 
-.t3 {
+#t3 {
     position: absolute;
     width: 33%;
     top: 18vh;
     right: 1vh;
 }
 
-.t4 {
+#t4 {
     position: absolute;
     width: 25%;
     top: 24vh;
     left: 15vh;
 }
 
-.t5 {
+#t5 {
     position: absolute;
     width: 25%;
     top: 30vh;
     left: 1vh;
 }
 
-.t6 {
+#t6 {
     position: absolute;
     width: 25%;
     top: 40vh;
     left: 15vh;
 }
 
-.t7 {
+#t7 {
     position: absolute;
     width: 32%;
     top: 34vh;
     right: 3vh;
 }
 
-.t8 {
+#t8 {
     position: absolute;
     width: 25%;
     top: 48vh;
     left: 3vh;
 }
 
-.t9 {
+#t9 {
     position: absolute;
     width: 30%;
     top: 47vh;
     right: 5vh;
 }
 
-.t10 {
+#t10 {
     position: absolute;
     width: 33%;
     top: 64vh;
     left: 1vh;
 }
 
-.t11 {
+#t11 {
     position: absolute;
     width: 23%;
     top: 66vh;
     right: 16vh;
 }
 
-.t12 {
+#t12 {
     position: absolute;
     width: 23%;
     top: 73vh;
     right: 3vh;
 }
 
-.t13 {
+#t13 {
     position: absolute;
     width: 30%;
     top: 79vh;
     right: 16vh;
 }
 
-.t14 {
+#t14 {
     position: absolute;
     width: 25%;
     top: 87vh;
     left: 3vh;
 }
 
-.t15 {
+#t15 {
     position: absolute;
     width: 25%;
     top: 92vh;
     left: 18vh;
 }
 
-.t16 {
+#t16 {
     position: absolute;
     width: 25%;
     top: 89vh;
     right: 2vh;
 }
 
-.t17 {
+#t17 {
     position: absolute;
     width: 25%;
     top: 100vh;
     right: 5vh;
 }
 
-.t18 {
+#t18 {
     position: absolute;
     width: 28%;
     top: 105vh;
     left: 6vh;
     padding-bottom: 10vh;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
 }

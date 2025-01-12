@@ -48,131 +48,172 @@ body {
     z-index: -1;
 }
 
+#click {
+    position: absolute;
+    width: 50%;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #t1 {
     position: absolute;
     width: 33%;
-    top: 8vh;
+    top: 15vh;
     left: 4vh;
 }
 
 #t2 {
     position: absolute;
     width: 28%;
-    top: 1vh;
+    top: 9vh;
     right: 8vh;
 }
 
 #t3 {
     position: absolute;
     width: 33%;
-    top: 18vh;
+    top: 25vh;
     right: 1vh;
 }
 
 #t4 {
     position: absolute;
     width: 25%;
-    top: 24vh;
+    top: 31vh;
     left: 15vh;
 }
 
 #t5 {
     position: absolute;
     width: 25%;
-    top: 30vh;
+    top: 37vh;
     left: 1vh;
 }
 
 #t6 {
     position: absolute;
     width: 25%;
-    top: 40vh;
-    left: 15vh;
+    top: 47vh;
+    left: 16.5vh;
 }
 
 #t7 {
     position: absolute;
     width: 32%;
-    top: 34vh;
+    top: 41vh;
     right: 3vh;
 }
 
 #t8 {
     position: absolute;
     width: 25%;
-    top: 48vh;
+    top: 55vh;
     left: 3vh;
 }
 
 #t9 {
     position: absolute;
     width: 30%;
-    top: 47vh;
-    right: 5vh;
+    top: 54vh;
+    right: 2vh;
 }
 
 #t10 {
     position: absolute;
     width: 33%;
-    top: 64vh;
+    top: 71vh;
     left: 1vh;
 }
 
 #t11 {
     position: absolute;
     width: 23%;
-    top: 66vh;
+    top: 73vh;
     right: 16vh;
 }
 
 #t12 {
     position: absolute;
     width: 23%;
-    top: 73vh;
+    top: 80vh;
     right: 3vh;
 }
 
 #t13 {
     position: absolute;
     width: 30%;
-    top: 79vh;
+    top: 86vh;
     right: 16vh;
 }
 
 #t14 {
     position: absolute;
     width: 25%;
-    top: 87vh;
+    top: 94vh;
     left: 3vh;
 }
 
 #t15 {
     position: absolute;
     width: 25%;
-    top: 92vh;
+    top: 99vh;
     left: 18vh;
 }
 
 #t16 {
     position: absolute;
     width: 25%;
-    top: 89vh;
+    top: 96vh;
     right: 2vh;
 }
 
 #t17 {
     position: absolute;
     width: 25%;
-    top: 100vh;
+    top: 107vh;
     right: 5vh;
 }
 
 #t18 {
     position: absolute;
     width: 28%;
-    top: 105vh;
+    top: 112vh;
     left: 6vh;
-    padding-bottom: 10vh;
+    padding-bottom: 12vh;
+}
+
+.image-wrapper {
+    position: fixed;
+    /* 이미지와 클릭 영역이 브라우저 창 기준으로 고정 */
+    bottom: -2vh;
+    /* 브라우저 창 하단에 위치 */
+    right: -4vh;
+    /* 브라우저 창 오른쪽에 위치 */
+    width: 40vw;
+    /* 이미지 래퍼 크기 제한 (이미지 크기에 맞춤) */
+    height: auto;
+    /* 비율 유지 */
+}
+
+.setlistOneEye {
+    width: 80%;
+    height: auto;
+}
+
+.click-area-wrapper {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back {
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+    width: 18vw;
+    height: auto;
 }
 
 .popup {
@@ -180,35 +221,45 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
     display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    display: none;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    max-width: 95vw;
+    max-height: 95vh;
 }
 
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 999;
+.popup img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#prevButton {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#nextButton {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#closePopup {
+    top: 20px;
+    right: 20px;
 }

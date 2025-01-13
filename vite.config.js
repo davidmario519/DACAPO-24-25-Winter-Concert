@@ -7,7 +7,10 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                tomato: resolve(__dirname, 'src/tomato/index.html')
+                tomato: resolve(__dirname, 'src/tomato/index.html'),
+                setlist: resolve(__dirname, 'src/setlist/index.html')
+
+
             }
         }
     }

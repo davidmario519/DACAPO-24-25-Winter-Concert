@@ -64,9 +64,9 @@ body {
     width: 43%;
     height: auto;
     margin-top: 120vh;
-    right: -7vh;
+    /* right: -6vh; */
     top: -17vh;
-    right: -14vh;
+    right: -15vh;
 }
 
 .image7 {
@@ -128,7 +128,7 @@ body {
     position: relative;
     width: 68%;
     bottom: -15vh;
-    right: -7vh;
+    right: -7.5vh;
     margin-bottom: -70vh;
 }
 
